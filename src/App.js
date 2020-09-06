@@ -12,7 +12,6 @@ import { Link } from "react-router-dom";
 import {
   Route,
   NavLink,
-  HashRouter,
   Switch
 } from "react-router-dom";
 
