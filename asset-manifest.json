@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/app/static/css/main.aa339c7b.chunk.css",
+    "main.css": "/app/static/css/main.bbe691b5.chunk.css",
     "main.js": "/app/static/js/main.d9068acd.chunk.js",
     "main.js.map": "/app/static/js/main.d9068acd.chunk.js.map",
     "runtime-main.js": "/app/static/js/runtime-main.d0c462e8.js",
@@ -8,9 +8,9 @@
     "static/js/2.ac677fbf.chunk.js": "/app/static/js/2.ac677fbf.chunk.js",
     "static/js/2.ac677fbf.chunk.js.map": "/app/static/js/2.ac677fbf.chunk.js.map",
     "index.html": "/app/index.html",
-    "precache-manifest.ff29acef0175aba9f58ccc966bb50c01.js": "/app/precache-manifest.ff29acef0175aba9f58ccc966bb50c01.js",
+    "precache-manifest.e950f37cf8acee5c288f5c2160b54274.js": "/app/precache-manifest.e950f37cf8acee5c288f5c2160b54274.js",
     "service-worker.js": "/app/service-worker.js",
-    "static/css/main.aa339c7b.chunk.css.map": "/app/static/css/main.aa339c7b.chunk.css.map",
+    "static/css/main.bbe691b5.chunk.css.map": "/app/static/css/main.bbe691b5.chunk.css.map",
     "static/js/2.ac677fbf.chunk.js.LICENSE.txt": "/app/static/js/2.ac677fbf.chunk.js.LICENSE.txt",
     "static/media/jan2010_USA_poster.jpg": "/app/static/media/jan2010_USA_poster.28ab2939.jpg",
     "static/media/jan2020_EUROPE_poster.jpg": "/app/static/media/jan2020_EUROPE_poster.9fdf5077.jpg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.d0c462e8.js",
     "static/js/2.ac677fbf.chunk.js",
-    "static/css/main.aa339c7b.chunk.css",
+    "static/css/main.bbe691b5.chunk.css",
     "static/js/main.d9068acd.chunk.js"
   ]
 }
