@@ -1,0 +1,135 @@
+#navbar {
+    width: 100%;
+    padding: 25px 0;
+    background: #0E141D;
+    color: white;
+    z-index: 1;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    list-style: none;
+    width: 100%;
+} 
+
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    transition:all ease 0.5s;
+}
+
+#navbar a:hover {
+    color: #ff4e01;
+}
+
+.burgerIcon {
+    display: none;
+}
+
+/* up to tablet */
+@media (max-width: 1180px) {
+    
+    /* #logo {
+        position: absolute;
+        top: 20%;
+        left: 2%;
+        width: 8%;
+        max-width: 200px;
+        min-width: 100px;
+    } */
+
+    #logo-container{
+        position: absolute;
+        height: 50%;
+        width: 17%;
+        top: 40%;
+        left: 80%;
+
+    }
+
+    #logo {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    .active #logo{
+        display: none !important;
+    }
+    
+    #navbar ul {
+        display: none;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10%;
+        /* right: 5%; - LEANNE CODE: this is forcing the ul to be off center */
+        padding: 0;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+    
+    .active ul {
+        display: block !important;
+    }
+
+    .navbar li {
+        flex-direction: column;
+        text-align: center;
+        padding: 5%;
+
+    }
+
+    .burgerIcon {
+        position: relative;
+        display: block;
+        border: none;
+        width: 35px;
+        height: 35px;
+        border-radius: 0;
+        left: 26px;
+        top: 0px;
+        background: #0E141D;
+    }
+
+    .burgerIcon .line,
+    .burgerIcon .line:after,
+    .burgerIcon .line:before{
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: white;
+        transition: ease 0.5s;
+    }
+
+    .burgerIcon .line:after{
+        content:'';
+        top: -14px;
+    }
+
+    .burgerIcon .line:before{
+        content:'';
+        top: 12px;
+    }
+
+    .active .burgerIcon .line:after {
+        transform: translateY(12px)
+    }
+
+    .active .burgerIcon .line:before {
+        transform: translateY(-14px)
+    }
+}
+
+
+

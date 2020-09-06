@@ -1,0 +1,11 @@
+#tourpage {
+    border: solid 1px blue;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    top: 20%;
+}
+
+#poster {
+    height: 50%;
+}
