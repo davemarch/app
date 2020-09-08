@@ -1,29 +1,31 @@
 {
   "files": {
-    "main.css": "/app/static/css/main.4e67ec66.chunk.css",
-    "main.js": "/app/static/js/main.a7c00eec.chunk.js",
-    "main.js.map": "/app/static/js/main.a7c00eec.chunk.js.map",
+    "main.css": "/app/static/css/main.6ece33c4.chunk.css",
+    "main.js": "/app/static/js/main.2b5ed2a6.chunk.js",
+    "main.js.map": "/app/static/js/main.2b5ed2a6.chunk.js.map",
     "runtime-main.js": "/app/static/js/runtime-main.d0c462e8.js",
     "runtime-main.js.map": "/app/static/js/runtime-main.d0c462e8.js.map",
-    "static/js/2.0c35d899.chunk.js": "/app/static/js/2.0c35d899.chunk.js",
-    "static/js/2.0c35d899.chunk.js.map": "/app/static/js/2.0c35d899.chunk.js.map",
+    "static/js/2.37dbfe3d.chunk.js": "/app/static/js/2.37dbfe3d.chunk.js",
+    "static/js/2.37dbfe3d.chunk.js.map": "/app/static/js/2.37dbfe3d.chunk.js.map",
     "index.html": "/app/index.html",
-    "precache-manifest.f7137462213546791344097be1d9dffc.js": "/app/precache-manifest.f7137462213546791344097be1d9dffc.js",
+    "precache-manifest.4fe03d8a25e56c9d274c007ad1fc6180.js": "/app/precache-manifest.4fe03d8a25e56c9d274c007ad1fc6180.js",
     "service-worker.js": "/app/service-worker.js",
-    "static/css/main.4e67ec66.chunk.css.map": "/app/static/css/main.4e67ec66.chunk.css.map",
-    "static/js/2.0c35d899.chunk.js.LICENSE.txt": "/app/static/js/2.0c35d899.chunk.js.LICENSE.txt",
+    "static/css/main.6ece33c4.chunk.css.map": "/app/static/css/main.6ece33c4.chunk.css.map",
+    "static/js/2.37dbfe3d.chunk.js.LICENSE.txt": "/app/static/js/2.37dbfe3d.chunk.js.LICENSE.txt",
     "static/media/jan2010_USA_poster.jpg": "/app/static/media/jan2010_USA_poster.28ab2939.jpg",
     "static/media/jan2018_EUROPE_poster.jpeg": "/app/static/media/jan2018_EUROPE_poster.e4b0d3fe.jpeg",
     "static/media/jan2020_EUROPE_poster.jpg": "/app/static/media/jan2020_EUROPE_poster.9fdf5077.jpg",
     "static/media/logo.png": "/app/static/media/logo.c2de8131.png",
     "static/media/may2011_USA_poster.jpg": "/app/static/media/may2011_USA_poster.2f38dff6.jpg",
     "static/media/nov2010_UK_poster.png": "/app/static/media/nov2010_UK_poster.1bbce4a4.png",
-    "static/media/sept2010_UK_poster.jpg": "/app/static/media/sept2010_UK_poster.633d3d6a.jpg"
+    "static/media/sept2010_UK_poster.jpg": "/app/static/media/sept2010_UK_poster.633d3d6a.jpg",
+    "static/media/spring2012_USA_poster.jpg": "/app/static/media/spring2012_USA_poster.b0e96474.jpg",
+    "static/media/winter2012_USA_poster.png": "/app/static/media/winter2012_USA_poster.b8f1ab5b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d0c462e8.js",
-    "static/js/2.0c35d899.chunk.js",
-    "static/css/main.4e67ec66.chunk.css",
-    "static/js/main.a7c00eec.chunk.js"
+    "static/js/2.37dbfe3d.chunk.js",
+    "static/css/main.6ece33c4.chunk.css",
+    "static/js/main.2b5ed2a6.chunk.js"
   ]
 }
