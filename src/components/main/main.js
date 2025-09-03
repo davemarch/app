@@ -31,7 +31,7 @@ const Main = ({ database = [], handleToUpdate = () => {} }) => {
               {poster ? (
                 <img src={poster} alt={title} className="posterImg" loading="lazy" />
               ) : (
-                <div className="posterPlaceholder">{title}</div>
+                <div className="posterPlaceholder">{title}</div> 
               )}
             </div>
             <div className="meta">
