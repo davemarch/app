@@ -1,59 +1,89 @@
+/* Header wrapper */
 #headerWrap {
-    width: 100%;
-    position: fixed;
-    background: white;
-    z-index: 1;
-    top: 0;
-    left: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: black;   /* full black background */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
 }
 
-
+/* Heading text inside the header */
 #header {
-    display: flex;
-    flex-direction: row;
-    height: 5%;
-    text-align: center;
-    padding: 10px 16px;
-    text-transform: uppercase;
-    font-size: 1em;
-    letter-spacing: 1.8px;
+  display: block;
+  text-align: center;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 1.8px;
+  color: white;
 }
 
-#header span {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%)
+/* NavBar container */
+#navbar {
+  width: 100%;
+  background-color: black;   /* keep navbar black */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
 }
 
+/* Logo */
+#logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
 
+#logo {
+  height: 36px;
+  width: auto;
+}
+
+/* Year dropdown */
+.year-filter select {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.year-filter select:focus {
+  outline: none;
+  border-color: #ff4e01; /* highlight color */
+}
+
+/* Links inside header (if any) */
 #header a {
-    text-decoration: none;
-    color: #ff4e01;
+  text-decoration: none;
+  color: #ff4e01;
 }
 
 #header a:hover {
-    color: black;
-    transition:all ease 0.5s;
+  color: white;
+  transition: all ease 0.3s;
 }
 
-/* up to tablet */
-@media (max-width: 1180px) {
-    
-    
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
+  .year-filter {
+    margin-top: 8px;
+    width: 100%;
+  }
+
+  .year-filter select {
+    width: 100%;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

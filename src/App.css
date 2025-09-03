@@ -8,11 +8,11 @@
   height: 100vh;
   text-transform: uppercase;
   font-size: 13px;
+
 }
 
 
 .link2 {
-  border: 1px solid red;
   position: absolute;
   top: 15%;
   left: 35%;

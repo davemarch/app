@@ -1,26 +1,2 @@
-/* Visually hidden label for accessibility */
-.sr-only {
-  position: absolute;
-  width: 1px; height: 1px;
-  padding: 0; margin: -1px;
-  overflow: hidden; clip: rect(0,0,0,0);
-  white-space: nowrap; border: 0;
-}
 
-#navbar.navbar {
-  position: sticky; top: 0; z-index: 1000;
-  display: flex; align-items: center; gap: 12px;
-  padding: 10px 12px;
-  background: #111; /* adjust to your theme */
-}
 
-#logo { height: 75px; display: block; }
-
-.year-filter select {
-  background: #000; color: #fff;
-  border: 1px solid #333; border-radius: 8px;
-  padding: 6px 10px; font-size: 0.95rem;
-}
-
-/* Mobile menu open/close (if you want to hide/show pieces via .active) */
-/* Example: show dropdown inline on mobile, no special rules needed */
