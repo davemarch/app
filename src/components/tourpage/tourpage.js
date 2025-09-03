@@ -1,51 +1,50 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './tourpage.css';
 
+class TourPage extends Component {
+  render() {
+    const { title, poster, date = [], venue = [], location = [] } = this.props;
 
-
-const TourPage = (props) => {
-
-    // console.log(props.tours[props.i])
-
-
-    let mapThru = (props) => {
-
-        var i = 0;
-        var date_list = [];
-
-
-        for (i = 0; i < props.tours[props.i].dates.length; ++i){
-            date_list.push(
-                <tr>
-                    <td>{props.tours[props.i].dates[i]}</td>
-                    <td>{props.tours[props.i].venue[i]}</td>
-                    <td>{props.tours[props.i].location[i]}</td>
-                </tr>
-            )
-        }
-        return <div>
-                <tr>
-                <th>Date</th>
-                <th>Venue</th>
-                <th>Town/City</th>
-            </tr>
-            {date_list}
-        </div>
-
-    }
-
-    
+    // Build show rows from aligned arrays
+    const shows = date.map((d, i) => ({
+      date: d,
+      venue: venue[i] || '',
+      location: location[i] || '',
+    }));
 
     return (
-    <div id="tourpage">
-        <p>{props.title}</p>
-        <img id = 'poster' src={props.poster}/>
-        <table>
-            {mapThru(props)}
-        </table>
-    </div>
-    )
-};
+      <div className="tourpage">
+        <header className="tourpage__header">
+          <Link to="/main" className="tourpage__back">← Back to all tours</Link>
+          <h1 className="tourpage__title">{title || 'Tour'}</h1>
+        </header>
 
+        {poster && (
+          <div className="tourpage__posterWrap">
+            <img src={poster} alt={title || 'Poster'} className="tourpage__poster" />
+          </div>
+        )}
+
+        <section className="tourpage__shows">
+          <h2>Shows</h2>
+          {shows.length ? (
+            <ul className="tourpage__list">
+              {shows.map((s, i) => (
+                <li key={i} className="tourpage__row">
+                  <span className="tourpage__cell tourpage__date">{s.date}</span>
+                  <span className="tourpage__cell tourpage__venue">{s.venue}</span>
+                  <span className="tourpage__cell tourpage__location">{s.location}</span>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <div className="tourpage__empty">No shows listed.</div>
+          )}
+        </section>
+      </div>
+    );
+  }
+}
 
 export default TourPage;

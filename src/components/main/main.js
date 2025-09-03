@@ -1,49 +1,47 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './main.css';
-import { Link } from "react-router-dom";
-import { useState } from 'react';
 
+const Main = ({ database = [], handleToUpdate = () => {} }) => {
+  // Only keep tours with a real title and not just a bare year
+  const list = (Array.isArray(database) ? database : []).filter((t) => {
+    const ttl = (t.title || '').trim();
+    if (!ttl) return false;
+    if (/^\d{4}$/.test(ttl)) return false;
+    return true;
+  });
 
-
-const Main = (props) => {
-
-
-
-        let mapThru = (props) => {
-
-            var	handleToUpdate	=	props.handleToUpdate;
-
-    
-
-
-        let i = 0;
-        let tour_list = [];
-        
-        for (i = 0; i < props.database.length; ++i){
-        let value = props.database[i].key;
-        tour_list.push(
-            <div>
-                <Link 
-                to={props.database[i].link}
-                >         
-                    <h2 onClick={() => handleToUpdate(value)}>{props.database[i].title}</h2>
-                </Link>
-            </div>
-            )
-        }
-
-        return <div>
-        <h1>{props.database[i]} </h1>
-        {tour_list}
-        </div> 
-    }
-
+  return (
+    <div id="imgGrid">
+      {list.map((tour, idx) => {
+        const poster = tour.poster || '';
+        const title = tour.title || 'Untitled';
+        const path = `/tourpage/i/${idx}`; // index-based route
 
         return (
-        <div id="main">
-            {mapThru(props)}
-        </div>
+          <Link
+            to={path}
+            key={`card-${idx}`}
+            onClick={() => handleToUpdate(idx)}
+            className="gridItem"
+            aria-label={`Open ${title}`}
+            title={title}
+          >
+            <div className="posterWrap">
+              {poster ? (
+                <img src={poster} alt={title} className="posterImg" loading="lazy" />
+              ) : (
+                <div className="posterPlaceholder">{title}</div>
+              )}
+            </div>
+            <div className="meta">
+              <h3 className="title">{title}</h3>
+            </div>
+          </Link>
         );
-}
+      })}
+    </div>
+  );
+};
 
 export default Main;
