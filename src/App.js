@@ -14,7 +14,7 @@ import TourPage from './components/tourpage/tourpage';     // ✅ lowercase to m
 import './App.css';
 
 const CSV_URL =
-  'https://docs.google.com/spreadsheets/d/e/2PACX-1vSU6-Ep6TvnoPu961DzWcJ8MTLd4elUA8OaupctfGJHPw0s2iMXtRY1HUXUtueG_JMtr8bvetQwNOEv/pub?gid=280621747&single=true&output=csv';
+  'https://docs.google.com/spreadsheets/d/e/2PACX-1vSe-47e3MTqxRZoQ__yG7rqcm_SbBtsdqC4ZQKkEx8fEdgQXX9DJrDsXGGYl6kNjoIxxvRSLrplsTRA/pub?output=csv';
 
 // ---- Helpers ----
 const toIso = (s) => {
@@ -135,13 +135,15 @@ class App extends Component {
       <Router>
         <div className="App">
           {/* Fixed black header */}
-          <header style={{ padding: '10px 16px', display: 'flex', alignItems: 'center', gap: 12, background: 'black', color: 'white' }}>
-            <img src={headerLogo} alt="Logo" style={{ height: 36 }} />
-            <Link to="/main">
+          <header id='header'
+          //style={{ padding: '10px 16px', display: 'flex', alignItems: 'center', gap: 12, background: 'black', color: 'white' }}
+          >
+            <img id='logo' src={headerLogo} alt="Logo"  />
+            <Link to="/main" className='showDataButton'>
               <button>Show Database</button>
             </Link>
             {!loading && !error && (
-              <div style={{ marginLeft: 'auto', color: '#888' }}>
+              <div id='statusText'>
                 Rows: {rows.length} &nbsp;|&nbsp; Tours: {tours.length}
               </div>
             )}

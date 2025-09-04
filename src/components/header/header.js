@@ -5,8 +5,8 @@ import NavBar from "../navbar/navbar.js";
 
 const Header = (props) => {
   return (
-    <header id="headerWrap">
-      <span id="header">{props.heading}</span>
+    <header className="headerWrap">
+      <span className="header">{props.heading}</span>
       <NavBar menu={props.menu} />   {/* no logo prop needed */}
     </header>
   );
